@@ -4,25 +4,40 @@ body {
   background-color: black;
 }
 
-hr {
-  background-color: #b7a57a;
-}
-
 * {
   color: #ECE9E2;
   /*font-family: 'Jomolhari', serif;*/
   font-family: 'Dancing Script', cursive;
 }
 
-#tab, .center {
-  display: flex;
+#tab, hr {
+  background-color: #b7a57a;
+}
+
+#options, #tab {
+  transition: all 500ms linear;
 }
 
 #tab {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 15vw;
+  overflow: hidden;
+}
+
+#options {
+  position: absolute;
+  left: 15.5vw;
+  top: 3vh;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#list {
   list-style-type: none;
-  justify-content: flex-start;
-  border: none;
-  margin-top: -53px;
+  padding-left: 0;
 }
 
 #portrait {
@@ -35,6 +50,30 @@ hr {
   border: 5px solid #b7a57a;
 }
 
+#about, .items {
+  padding-left: 15%;
+  width: 110%;
+  font-size: 2vw;
+  border-bottom: 1px solid white;
+}
+
+#tab, .center {
+  display: flex;
+}
+
 .center {
   justify-content: center;
+}
+
+.hidden, #tab.hidden {
+  width: 0;
+}
+
+.move, #options.move {
+  left: 0.5vw;
+}
+
+.items {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
