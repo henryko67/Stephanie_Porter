@@ -10,10 +10,6 @@ body {
   font-family: 'Dancing Script', cursive;
 }
 
-#tab, hr {
-  background-color: #b7a57a;
-}
-
 #options, #tab {
   transition: all 500ms linear;
 }
@@ -25,6 +21,7 @@ body {
   height: 100%;
   width: 15vw;
   overflow: hidden;
+  background-color: #262523;
 }
 
 #options {
@@ -36,6 +33,7 @@ body {
 }
 
 #list {
+  margin-top: 0;
   list-style-type: none;
   padding-left: 0;
 }
@@ -52,7 +50,9 @@ body {
   border: 5px solid #b7a57a;
 }
 
-#about, .items {
+#home, .items {
+  padding-top: 5%;
+  padding-bottom: 5%;
   padding-left: 15%;
   width: 110%;
   font-size: 2vw;
@@ -61,6 +61,10 @@ body {
 
 #tab, .center {
   display: flex;
+}
+
+.active, hr {
+  background-color: #b7a57a;
 }
 
 .center {
@@ -75,7 +79,11 @@ body {
   left: 0.5vw;
 }
 
-.items {
-  padding-top: 5%;
-  padding-bottom: 5%;
+.active {
+  color: white;
+}
+
+#tab li:hover:not(.active) {
+  background-color: #555;
+  color: white;
 }
