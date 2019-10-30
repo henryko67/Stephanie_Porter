@@ -4,6 +4,10 @@ body {
   background-color: black;
 }
 
+a {
+  text-decoration: none;
+}
+
 * {
   color: #ECE9E2;
   /*font-family: 'Jomolhari', serif;*/
@@ -50,7 +54,7 @@ body {
   border: 5px solid #b7a57a;
 }
 
-#home, .items {
+.items {
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 15%;
