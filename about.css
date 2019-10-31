@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Jomolhari&display=swap');
+
+body {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  color: #ECE9E2;
+  /*font-family: 'Jomolhari', serif;*/
+  font-family: 'Dancing Script', cursive;
+}
+
+select, input, textarea, option, .black {
+  color: black;
+}
+
+#options, #tab {
+  transition: all 500ms linear;
+}
+
+#separator {
+  width: 70%;
+}
+
+#tab {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 15vw;
+  overflow: hidden;
+  background-color: #262523;
+}
+
+#options {
+  position: absolute;
+  left: 15.5vw;
+  top: 3vh;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#list {
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#centerImage {
+  margin-top: 5%;
+}
+
+#centerImage, #portrait {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  border: 5px solid #b7a57a;
+}
+
+#col {
+  align-items: center;
+  flex-direction: column;
+}
+
+#category, #textBox {
+  width: 100%;
+}
+
+#textBox {
+  height: 15vh;
+}
+
+#centerImage, #portrait, .widthHeightScale {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+#tab, .center, .events {
+  display: flex;
+}
+
+#aboutSeparator {
+  width: 50%;
+}
+
+#social {
+  position: fixed;
+  right: 1vw;
+  bottom: 0;
+}
+
+#social > a {
+  display:block;
+  padding-bottom: 3vh;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.items {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 15%;
+  width: 110%;
+  font-size: 2vw;
+  border-bottom: 1px solid white;
+}
+
+.active, hr {
+  background-color: #b7a57a;
+}
+
+.center {
+  justify-content: center;
+}
+
+.hidden, #tab.hidden {
+  width: 0;
+}
+
+.move, #options.move {
+  left: 0.5vw;
+}
+
+.active {
+  color: white;
+}
+
+.icons {
+  padding-right:10px;
+  height: 100%;
+}
+
+.events {
+  margin-bottom: 10px;
+  height:50%;
+  width:35%;
+}
+
+#tab li:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
