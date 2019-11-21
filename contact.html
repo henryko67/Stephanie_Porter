@@ -40,10 +40,18 @@
         </svg>
       </span>
       <hr/>
-      <section id="contact" class="center">
-        <h2 class="center"> Contact Form </h2>
-        <form>
-          <div id="prefix" class="divide">
+      <h2 class="center">Contact</h2>
+      <section class="center">
+        <ul id="list" class="vertical">
+          <li>Stephanie Porter</li>
+          <li>Email: stephaniep@epicasset.com</li>
+          <li>Phone Number: 1-800-DONOTCALL</li>
+        </ul>
+      </section>
+      <section class="center">
+        <form id="contact">
+          <div class="divide formProperties">
+            <div class="formProperties">
             <select id="choose" name="Prefix">
               <option value="mr">Mr.</option>
               <option value="ms">Ms.</option>
@@ -51,6 +59,7 @@
               <option value="other">Other</option>
             </select>
             <input id="name" type="text" placeholder="Name" />
+          </div>
             <input id="email" type="text" placeholder="Email" />
           </div>
           <select id="category" class="divide" name="category">

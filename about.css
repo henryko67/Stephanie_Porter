@@ -73,7 +73,7 @@ form > select, div > select, div > input, textarea {
   margin-top: 5%;
 }
 
-#col {
+#col, .vertical {
   align-items: center;
 }
 
@@ -90,7 +90,7 @@ form > select, div > select, div > input, textarea {
   max-height: 50%;
 }
 
-#tab, #prefix, .center, .events {
+#tab, #prefix, .center, .events, .formProperties, .vertical {
   display: flex;
 }
 
@@ -107,12 +107,20 @@ form > select, div > select, div > input, textarea {
   border: 5px solid #b7a57a;
 }
 
-#contact, #col {
+#col, .vertical {
   flex-direction: column;
 }
 
+#contact {
+  width: 75%;
+}
+
 #email {
-  margin-left: 50%;
+  width: 35vw;
+}
+
+#name {
+  width: 33vw;
 }
 
 #social > a {
@@ -160,6 +168,10 @@ form > select, div > select, div > input, textarea {
 
 .active, hr {
   background-color: #b7a57a;
+}
+
+.formProperties {
+  justify-content: space-between;
 }
 
 #prefix, .center {
