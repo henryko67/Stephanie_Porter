@@ -166,12 +166,18 @@ form > select, div > select, div > input, textarea {
   border-bottom: 1px solid white;
 }
 
+.icons {
+  width: 7vw;
+  min-width: 75px;
+}
+
 .active, hr {
   background-color: #b7a57a;
 }
 
 .formProperties {
   justify-content: space-between;
+  max-height: 68.45px;
 }
 
 #prefix, .center {
