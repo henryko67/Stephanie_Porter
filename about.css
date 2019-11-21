@@ -25,9 +25,17 @@ select, input, textarea, option, .black {
   color: black;
 }
 
+select, input, textarea {
+  font-size: 3vmin;
+}
+
 form > select, div > select, div > input, textarea {
   border: 2px solid #b7a57a;
   border-radius: 5px;
+}
+
+#tab {
+  overflow: hidden;
 }
 
 #choose {
@@ -52,7 +60,6 @@ form > select, div > select, div > input, textarea {
   top: 0;
   left: 0;
   width: 15vw;
-  overflow: hidden;
   background-color: #262523;
 }
 
@@ -77,7 +84,7 @@ form > select, div > select, div > input, textarea {
   align-items: center;
 }
 
-#category, #textBox {
+#category, #textBox, #email, .gallery img {
   width: 100%;
 }
 
@@ -98,6 +105,10 @@ form > select, div > select, div > input, textarea {
   width: 50%;
 }
 
+#email, #textBox {
+  box-sizing: border-box;
+}
+
 #social {
   right: 1vw;
   bottom: 0;
@@ -113,10 +124,6 @@ form > select, div > select, div > input, textarea {
 
 #contact {
   width: 75%;
-}
-
-#email {
-  width: 35vw;
 }
 
 #name {
@@ -155,6 +162,7 @@ form > select, div > select, div > input, textarea {
 
 .divide {
   margin-bottom: 2%;
+  max-height: 68.45px;
 }
 
 .items {
@@ -173,11 +181,6 @@ form > select, div > select, div > input, textarea {
 
 .active, hr {
   background-color: #b7a57a;
-}
-
-.formProperties {
-  justify-content: space-between;
-  max-height: 68.45px;
 }
 
 #prefix, .center {
@@ -224,7 +227,6 @@ form > select, div > select, div > input, textarea {
 }
 
 .gallery img {
-  width: 100%;
   height: auto;
 }
 
