@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Jomolhari&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 body {
-  background-color: black;
+  background-color: rgba(0,0,0,.74);
+  background-image: url("Stephanie_Porter_Overlay.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 a {
@@ -10,12 +15,29 @@ a {
 
 * {
   color: #ECE9E2;
-  /*font-family: 'Jomolhari', serif;*/
+}
+
+h1, .items {
   font-family: 'Dancing Script', cursive;
 }
 
 select, input, textarea, option, .black {
   color: black;
+}
+
+form > select, div > select, div > input, textarea {
+  border: 2px solid #b7a57a;
+  border-radius: 5px;
+}
+
+#choose {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#name {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 #options, #tab {
@@ -39,7 +61,6 @@ select, input, textarea, option, .black {
   left: 15.5vw;
   top: 3vh;
   z-index: 1;
-  cursor: pointer;
 }
 
 #list {
@@ -52,18 +73,8 @@ select, input, textarea, option, .black {
   margin-top: 5%;
 }
 
-#centerImage, #portrait {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: white;
-  border: 5px solid #b7a57a;
-}
-
 #col {
   align-items: center;
-  flex-direction: column;
 }
 
 #category, #textBox {
@@ -74,22 +85,34 @@ select, input, textarea, option, .black {
   height: 15vh;
 }
 
-#centerImage, #portrait, .widthHeightScale {
+#centerImage, #portrait, .widthHeightScale, .events {
   max-width: 50%;
   max-height: 50%;
 }
 
-#tab, .center, .events {
+#tab, #prefix, .center, .events {
   display: flex;
 }
 
-#aboutSeparator {
+#aboutSeparator, .hitGet, .events {
   width: 50%;
 }
 
 #social {
   right: 1vw;
   bottom: 0;
+}
+
+#portrait {
+  border: 5px solid #b7a57a;
+}
+
+#contact, #col {
+  flex-direction: column;
+}
+
+#email {
+  margin-left: 50%;
 }
 
 #social > a {
@@ -106,6 +129,26 @@ select, input, textarea, option, .black {
   height: 100%;
 }
 
+#options, .hitGet {
+  cursor: pointer;
+}
+
+.events, #portrait {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ECE9E2;
+}
+
+.hitGet, .divide {
+  height: 5vh;
+}
+
+.divide {
+  margin-bottom: 2%;
+}
+
 .items {
   padding-top: 5%;
   padding-bottom: 5%;
@@ -119,7 +162,7 @@ select, input, textarea, option, .black {
   background-color: #b7a57a;
 }
 
-.center {
+#prefix, .center {
   justify-content: center;
 }
 
@@ -136,9 +179,35 @@ select, input, textarea, option, .black {
 }
 
 .events {
+  border: 5px solid #f28864;
   margin-bottom: 10px;
   height:50%;
-  width:35%;
+}
+
+.hitGet {
+  background-color: transparent;
+  border: 2px solid #f06d41;
+  font-size: 150%;
+  font-family: 'Lobster';
+}
+
+.black {
+  font-family: 'Jomolhari';
+}
+
+.gallery {
+  margin: 1vw;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
 }
 
 #tab li:hover:not(.active) {

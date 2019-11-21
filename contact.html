@@ -40,31 +40,27 @@
         </svg>
       </span>
       <hr/>
-      <section id="col" class="center">
-        <h2> Contact Form </h2>
+      <section id="contact" class="center">
+        <h2 class="center"> Contact Form </h2>
         <form>
-          <select name="Prefix">
-            <option value="mr">Mr.</option>
-            <option value="ms">Ms.</option>
-            <option value="mrs">Mrs.</option>
-            <option value="other">Other</option>
-          </select>
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Email" />
-          <div>
-            <select id="category" name="category">
-              <option value="business">Business</option>
-              <option value="general">General</option>
-              <option value="bugReport">Bug Report</option>
+          <div id="prefix" class="divide">
+            <select id="choose" name="Prefix">
+              <option value="mr">Mr.</option>
+              <option value="ms">Ms.</option>
+              <option value="mrs">Mrs.</option>
+              <option value="other">Other</option>
             </select>
+            <input id="name" type="text" placeholder="Name" />
+            <input id="email" type="text" placeholder="Email" />
           </div>
-          <div>
-            <input type="checkbox" name="copyEmail" />
-            <label>Email me a copy of this message</label>
-          </div>
-          <div>
-            <textarea id="textBox" placeholder="Message Here"></textarea>
-          </div>
+          <select id="category" class="divide" name="category">
+            <option value="business">Business</option>
+            <option value="general">General</option>
+            <option value="bugReport">Bug Report</option>
+          </select>
+          <input type="checkbox" name="copyEmail" />
+          <label>Email me a copy of this message</label>
+          <textarea id="textBox" placeholder="Message Here"></textarea>
           <input type="submit" value="Send Message"/>
         </form>
       </section>
