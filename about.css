@@ -34,10 +34,6 @@ form > select, div > select, div > input, textarea {
   border-radius: 5px;
 }
 
-#tab {
-  overflow: hidden;
-}
-
 #choose {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -59,14 +55,15 @@ form > select, div > select, div > input, textarea {
 #tab {
   top: 0;
   left: 0;
-  width: 15vw;
+  width: 15vmax;
   background-color: #262523;
+  overflow: hidden;
 }
 
 #options {
   position: absolute;
-  left: 15.5vw;
-  top: 3vh;
+  left: 15.5vmax;
+  top: 27px;
   z-index: 1;
 }
 
@@ -170,7 +167,7 @@ form > select, div > select, div > input, textarea {
   padding-bottom: 5%;
   padding-left: 15%;
   width: 110%;
-  font-size: 2vw;
+  font-size: 2vmax;
   border-bottom: 1px solid white;
 }
 
@@ -192,7 +189,7 @@ form > select, div > select, div > input, textarea {
 }
 
 .move, #options.move {
-  left: 0.5vw;
+  left: 8px;
 }
 
 .icons {
