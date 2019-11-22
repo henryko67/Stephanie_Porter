@@ -2,12 +2,40 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 
+@media (orientation: landscape) {
+   #col {
+     margin-left: 25%;
+     margin-right: 25%;
+   }
+}
+
+@media (orientation: portrait) {
+   #col {
+     margin-left: 5%;
+     margin-right: 5%;
+   }
+}
+
+main {
+  background-image: url("Stephanie_Porter_Overlay.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+}
+
 a {
   text-decoration: none;
 }
 
 * {
   color: #ECE9E2;
+}
+
+body, main {
+  background-color: rgba(0,0,0);
 }
 
 h1, .items {
@@ -27,16 +55,11 @@ form > select, div > select, div > input, textarea {
   border-radius: 5px;
 }
 
-main {
-  background-color: rgba(0,0,0);
-  background-image: url("Stephanie_Porter_Overlay.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+li > a {
+  display: block;
+}
+
+#tab, main {
   top: 0;
   left: 0;
 }
@@ -55,13 +78,7 @@ main {
   transition: all 500ms linear;
 }
 
-#separator {
-  width: 70%;
-}
-
 #tab {
-  top: 0;
-  left: 0;
   width: 15vmax;
   background-color: #262523;
   overflow: hidden;
@@ -84,11 +101,11 @@ main {
   margin-top: 5%;
 }
 
-#col, .vertical {
+#col, .events, .vertical {
   align-items: center;
 }
 
-#category, #textBox, #email, .gallery img {
+#category, #textBox, #email, #separator, #portrait, .fill, .gallery img {
   width: 100%;
 }
 
@@ -96,7 +113,7 @@ main {
   height: 15vh;
 }
 
-#centerImage, #portrait, .widthHeightScale, .events {
+#centerImage {
   max-width: 50%;
   max-height: 50%;
 }
@@ -105,7 +122,7 @@ main {
   display: flex;
 }
 
-#aboutSeparator, .hitGet, .events {
+.hitGet {
   width: 50%;
 }
 
@@ -122,7 +139,7 @@ main {
   border: 5px solid #b7a57a;
 }
 
-#col, .vertical {
+#col, .events, .vertical {
   flex-direction: column;
 }
 
@@ -153,15 +170,11 @@ main {
 }
 
 .events, #portrait {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   background-color: #ECE9E2;
-}
-
-.hitGet, .divide {
-  height: 5vh;
 }
 
 .divide {
@@ -169,7 +182,7 @@ main {
   max-height: 68.45px;
 }
 
-.items {
+.items > a {
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 15%;
@@ -207,6 +220,11 @@ main {
   border: 5px solid #f28864;
   margin-bottom: 10px;
   height:50%;
+  width: 96%;
+}
+
+.divide, .hitGet {
+  height: 5vh;
 }
 
 .hitGet {
@@ -214,6 +232,7 @@ main {
   border: 2px solid #f06d41;
   font-size: 150%;
   font-family: 'Lobster';
+  min-height: 35px;
 }
 
 .black {
@@ -223,7 +242,11 @@ main {
 .gallery {
   margin: 1vw;
   border: 1px solid #ccc;
-  width: 180px;
+  width: 22%;
+}
+
+.formProperties, #category {
+  min-height: 23px;
 }
 
 .gallery:hover {
@@ -234,7 +257,7 @@ main {
   height: auto;
 }
 
-#tab li:hover:not(.active) {
+#tab a:hover:not(.active) {
   color: white;
   background-color: #555;
 }
