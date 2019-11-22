@@ -226,7 +226,7 @@ form > select, div > select, div > input, textarea {
 .gallery {
   margin: 1vw;
   border: 1px solid #ccc;
-  width: 180px;
+  width: 22%;
 }
 
 .gallery:hover {
