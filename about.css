@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Jomolhari&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
 main {
-  background-color: rgba(0,0,0);
   background-image: url("Stephanie_Porter_Overlay.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center bottom;
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
   position: absolute;
 }
 
@@ -19,6 +19,10 @@ a {
 
 * {
   color: #ECE9E2;
+}
+
+body, main {
+  background-color: rgba(0,0,0);
 }
 
 h1, .items {
