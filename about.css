@@ -182,7 +182,7 @@ li > a {
   max-height: 68.45px;
 }
 
-.items {
+.items > a {
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 15%;
@@ -257,7 +257,7 @@ li > a {
   height: auto;
 }
 
-#tab li:hover:not(.active) {
+#tab a:hover:not(.active) {
   color: white;
   background-color: #555;
 }
