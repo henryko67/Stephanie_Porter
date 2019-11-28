@@ -14,6 +14,37 @@
      margin-left: 5%;
      margin-right: 5%;
    }
+   #musicList {
+     flex-direction: column;
+   }
+}
+
+@media only screen and (max-width: 760px) {
+  #options {
+    left: 72%;
+  }
+
+  #tab {
+    width: 70%;
+  }
+
+  .items > a {
+    font-size: 20pt;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  #options {
+    left: 15.5vmax;
+  }
+
+  #tab {
+    width: 15vmax;
+  }
+
+  .items > a {
+    font-size: 2vmax;
+  }
 }
 
 main {
@@ -79,14 +110,12 @@ li > a {
 }
 
 #tab {
-  width: 15vmax;
   background-color: #262523;
   overflow: hidden;
 }
 
 #options {
   position: absolute;
-  left: 15.5vmax;
   top: 27px;
   z-index: 1;
 }
@@ -95,17 +124,14 @@ li > a {
   margin-top: 0;
   list-style-type: none;
   padding-left: 0;
-}
-
-#centerImage {
-  margin-top: 5%;
+  overflow-x: hidden;
 }
 
 #col, .events, .vertical {
   align-items: center;
 }
 
-#category, #textBox, #email, #separator, #portrait, .fill, .gallery img {
+#category, #textBox, #email, #separator, #portrait, #list, .fill, .gallery img {
   width: 100%;
 }
 
@@ -114,11 +140,12 @@ li > a {
 }
 
 #centerImage {
+  margin-top: 5%;
   max-width: 50%;
-  max-height: 50%;
+  max-height: 25%;
 }
 
-#tab, #prefix, .center, .events, .formProperties, .vertical {
+#tab, #prefix, #musicList, .center, .events, .formProperties, .vertical {
   display: flex;
 }
 
@@ -186,8 +213,6 @@ li > a {
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 15%;
-  width: 110%;
-  font-size: 2vmax;
   border-bottom: 1px solid white;
 }
 
@@ -243,6 +268,18 @@ li > a {
   margin: 1vw;
   border: 1px solid #ccc;
   width: 22%;
+}
+
+/* CHANGE */
+
+#musicList {
+  justify-content: space-around;
+}
+
+.spotify {
+  max-height: 80px;
+  width: 25%;
+  min-width:320px;
 }
 
 .formProperties, #category {
