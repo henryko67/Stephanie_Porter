@@ -141,15 +141,14 @@ li > a {
 
 #centerImage {
   margin-top: 5%;
-  max-width: 50%;
-  max-height: 25%;
+  height: 50%;
 }
 
 #tab, #prefix, #musicList, .center, .events, .formProperties, .vertical {
   display: flex;
 }
 
-.hitGet {
+#centerImage, .hitGet {
   width: 50%;
 }
 
