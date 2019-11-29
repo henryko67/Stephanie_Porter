@@ -25,17 +25,31 @@
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 760px) and (orientation: portrait) {
   #options {
-    left: 15.5vmax;
+    left: 15.5vh;
   }
 
   #tab {
-    width: 15vmax;
+    width: 15vh;
   }
 
   .items > a {
-    font-size: 2vmax;
+    font-size: 2vh;
+  }
+}
+
+@media only screen and (min-width: 760px) and (orientation: landscape) {
+  #options {
+    left: 15.5vw;
+  }
+
+  #tab {
+    width: 15vw;
+  }
+
+  .items > a {
+    font-size: 2vw;
   }
 }
 
