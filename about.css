@@ -14,9 +14,6 @@
      margin-left: 5%;
      margin-right: 5%;
    }
-   #musicList {
-     flex-direction: column;
-   }
 }
 
 @media only screen and (max-width: 760px) {
@@ -69,6 +66,7 @@ main {
   min-height: 100%;
   min-width: 100%;
   position: absolute;
+  width: 20%;
 }
 
 a {
@@ -158,7 +156,7 @@ li > a {
   height: 50%;
 }
 
-#tab, #prefix, #musicList, .center, .events, .formProperties, .vertical {
+#tab, #prefix, .center, .events, .formProperties, .vertical {
   display: flex;
 }
 
@@ -281,18 +279,6 @@ li > a {
   margin: 1vw;
   border: 1px solid #ccc;
   width: 22%;
-}
-
-/* CHANGE */
-
-#musicList {
-  justify-content: space-around;
-}
-
-.spotify {
-  max-height: 80px;
-  width: 25%;
-  min-width:320px;
 }
 
 .formProperties, #category {

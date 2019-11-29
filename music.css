@@ -63,6 +63,10 @@ main {
   position: absolute;
 }
 
+main, div {
+  width: 20%;
+}
+
 a {
   text-decoration: none;
 }
@@ -148,8 +152,6 @@ img {
   left: 8px;
 }
 
-/* CHANGE */
-
 .musicList {
   justify-content: space-around;
   margin-top: 2%;
@@ -164,7 +166,6 @@ img {
 
 div {
   min-width: 300px;
-  width: 20%;
 }
 
 #tab a:hover:not(.active) {
