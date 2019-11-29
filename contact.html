@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Contact Stephanie Porter">
+    <meta name="keywords" content="Seattle, jazz, vocalist, music, events, earshot award winner, best, singer, female, recording artists, Knkx, STEPHANIE PORTER">
     <title>Stephanie Porter | Contact</title>
     <link type="image/png" href="icon.png" rel="icon">
     <link rel="stylesheet" href="about.css">
@@ -42,7 +45,7 @@
       <hr/>
       <h2 class="center">Contact</h2>
       <section class="center">
-        <ul id="list" class="vertical">
+        <ul class="contactDetails vertical">
           <li>Stephanie Porter</li>
           <li>Email: stephaniep@epicasset.com</li>
           <li>Phone Number: 1-800-DONOTCALL</li>
@@ -52,25 +55,25 @@
         <form id="contact">
           <div class="divide formProperties">
             <div class="formProperties">
-            <select id="choose" name="Prefix">
+            <select aria-label="Choose a prefix" id="choose" name="Prefix">
               <option value="mr">Mr.</option>
               <option value="ms">Ms.</option>
               <option value="mrs">Mrs.</option>
               <option value="other">Other</option>
             </select>
-            <input id="name" type="text" placeholder="Name" />
+            <input aria-label="Type your name" id="name" type="text" placeholder="Name" />
           </div>
-            <input id="email" type="text" placeholder="Email" />
+            <input aria-label="Type your email" id="email" type="text" placeholder="Email" />
           </div>
-          <select id="category" class="divide" name="category">
+          <select aria-label="Choose your inquiry type" id="category" class="divide" name="category">
             <option value="business">Business</option>
             <option value="general">General</option>
             <option value="bugReport">Bug Report</option>
           </select>
-          <input type="checkbox" name="copyEmail" />
-          <label>Email me a copy of this message</label>
-          <textarea id="textBox" placeholder="Message Here"></textarea>
-          <input type="submit" value="Send Message"/>
+          <input id="copy" type="checkbox" name="copyEmail" />
+          <label for="copy">Email me a copy of this message</label>
+          <textarea aria-label="Type your inquiry" id="textBox" placeholder="Message Here"></textarea>
+          <input aria-label="Hit to send message" type="submit" value="Send Message"/>
         </form>
       </section>
     </main>

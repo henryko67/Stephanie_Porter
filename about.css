@@ -120,7 +120,7 @@ li > a {
   z-index: 1;
 }
 
-#list {
+#list, .contactDetails {
   margin-top: 0;
   list-style-type: none;
   padding-left: 0;
@@ -131,7 +131,7 @@ li > a {
   align-items: center;
 }
 
-#category, #textBox, #email, #separator, #portrait, #list, .fill, .gallery img {
+#category, #textBox, #email, #separator, #portrait, #list, .fill, .contactDetails, .gallery img {
   width: 100%;
 }
 
