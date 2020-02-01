@@ -6,8 +6,8 @@
     <meta name="description" content="Contact Stephanie Porter">
     <meta name="keywords" content="Seattle, jazz, vocalist, music, events, earshot award winner, best, singer, female, recording artists, Knkx, STEPHANIE PORTER">
     <title>Stephanie Porter | Contact</title>
-    <link type="image/png" href="icon.png" rel="icon">
-    <link rel="stylesheet" href="about.css">
+    <link type="image/png" href="images/icon.png" rel="icon">
+    <link rel="stylesheet" href="styles.css">
     <script src="index.js"></script>
   </head>
   <body>
@@ -48,11 +48,11 @@
         <ul class="contactDetails vertical">
           <li>Stephanie Porter</li>
           <li>Email: stephaniep@epicasset.com</li>
-          <li>Phone Number: 1-800-DONOTCALL</li>
+          <li>Phone Number: (206) 595-2246</li>
         </ul>
       </section>
       <section class="center">
-        <form id="contact">
+        <form id="contact" method="post" action="contact.php">
           <div class="divide formProperties">
             <div class="formProperties">
             <select aria-label="Choose a prefix" id="choose" name="Prefix">
@@ -65,14 +65,19 @@
           </div>
             <input aria-label="Type your email" id="email" type="text" placeholder="Email" />
           </div>
+          <h3 class="center">Category</h3>
           <select aria-label="Choose your inquiry type" id="category" class="divide" name="category">
             <option value="business">Business</option>
             <option value="general">General</option>
             <option value="bugReport">Bug Report</option>
           </select>
-          <input id="copy" type="checkbox" name="copyEmail" />
-          <label for="copy">Email me a copy of this message</label>
           <textarea aria-label="Type your inquiry" id="textBox" placeholder="Message Here"></textarea>
+          <!--
+            <div>
+              <input id="copy" type="checkbox" name="copyEmail" />
+              <label for="copy">Email me a copy of this message</label>
+            </div>
+          -->
           <input aria-label="Hit to send message" type="submit" value="Send Message"/>
         </form>
       </section>
