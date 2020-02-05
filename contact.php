@@ -27,17 +27,17 @@ error_reporting(E_ALL);
   *
   */
 
-if (isset($_POST['submit'])) {
-  $prefix = $_POST['choose'];
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $category = $_POST['category'];
-  $text = $_POST['textBox'];
+$prefix = $_POST['choose'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$category = $_POST['category'];
+$text = $_POST['textBox'];
 
-  $mailTo = "henry.ko67@gmail.com";
-  $headers = "From: ".$email;
-  $message = "Email Request from "$prefix." ".$name.".\n\n".$text;
+$mailTo = "henry.ko67@gmail.com";
+$headers = "From: ".$email;
+$message = "Email Request from "$prefix." ".$name.".\n\n".$text;
 
-  mail($mailTo, $category, $message, $headers);
-}
+mail($mailTo, $category, $message, $headers);
+
+header("Location: contact.html");
 ?>

@@ -1,0 +1,4 @@
+Sitemap: https://www.stephanieporter.com/sitemaps/sitemap.xml
+User-agent: *
+Disallow: /contact.php
+Disallow: /images
